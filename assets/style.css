@@ -5,9 +5,9 @@
     text-decoration: none;
     list-style-type: none;
 }
-/* div{
+div{
     border: 1px solid black;
-} */
+}
 body{
     background-color: black;
     display: flex;
@@ -75,5 +75,150 @@ header{
 main{
     min-height: 70vh;
     margin: 5px;
-    background-color: white;
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+}
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Ajustes BigCard */
+
+.bigCard{
+    min-width: 70%;
+    max-width: 900px;
+    margin: 10px;
+    border-radius: 10px;
+
+    background-color: bisque;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Cuerpo de la bigCard */
+.bigCardContImg{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bigCardBody{
+    width: 65%;
+}
+.bigCardTitle{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    margin: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.bigCardSubTitle{
+    margin: 5px;
+    text-align: center;
+    font-style: bold;
+}
+.bigCardDescription{
+    margin: 5px;
+    padding: 5px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 40px;
+    line-height:25px;
+}
+.bigCardButton{
+    margin: 5px;
+
+    text-align: center;
+    font-style: bold;
+
+    display: flex;
+    justify-content: center;
+}
+.bigCardButton a{
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    background-color: blue;
+    
+}
+
+/* Ajustes de la imagen BigCard */
+.imgBigCard{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+/* Estilo MiniCard */
+
+.miniCard{
+    min-width: 25%;
+    max-width: 290px;
+    margin: 10px;
+    border-radius: 10px;
+
+    background-color: bisque;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.miniCardBody{
+    /* height: 30%; */
+    margin: 5px;
+    background-image: url(./img/Earth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 10px;
+
+}
+.miniCardTitle{
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 5px;
+    color: wheat;
+}
+.miniCardSubTitle{
+    margin: 5px;
+    color: white;
+}
+.miniCardDescription{
+    margin: 5px;
+    color: white;
+}
+.miniCardButton{
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+}
+.miniCardButton a{
+    padding: 5px;
+    color: red;
+    background-color: blue;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+/* Estilo imagen miniCard */
+.miniCardContImg{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniCardContImg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
 }
