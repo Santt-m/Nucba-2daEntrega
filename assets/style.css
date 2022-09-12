@@ -2,53 +2,78 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  /* div{
+    text-decoration: none;
+    list-style-type: none;
+}
+/* div{
     border: 1px solid black;
 } */
-  body{
-    background-color: rgb(197, 195, 195);
+body{
+    background-color: black;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;    
-  }
-  /* Ajustes NAV */
-  nav{
+}
+/* Ajustes header */
+header{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    background-color: white;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 20px 10px 20px;
-    border: 2px solid beige
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.27);
 }
-.logoNav{
+/* Logo */
+.contLogo{
+    width: 10%;
+    margin: 5px;
+}
+.logo{
     width: 75px;
     height: 75px;
-    padding: 5px;
-    border-radius: 360px;
-    margin: 5px 0px 5px 20px;
     border: 1px solid red;
+    border-radius: 360px;
 }
-nav div a{
-    font-size: 20px;
-    font-weight: bold;
+/* Carrito */
+.ContCarrito{
     margin: 5px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 360px;
+}
+.navCarrito{
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
+}
+/* Nav */
+.navBar{
+    width: 70%;
+    display: flex;
+    justify-content: center;   
+}
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px
+}
+.navBar a{
     padding: 10px;
     border-radius: 10px 0px 10px 0px;
-    text-decoration: none;
+    border: 1px solid red;
+    color: white;
 }
-nav div a:hover{
-    background-color: bisque;
+.navBar a:hover{
+    background-color: rgba(255, 0, 0, 0.415);
 }
-.contenedorNav{
-    margin-right: 30px;
-}
+
 /* Ajustes Main */
 main{
-    min-height: 80vh;
-    max-width: 98%;
-    margin: -9px 20px 10px 20px;
-    border: 2px solid beige;
+    min-height: 70vh;
+    margin: 5px;
     background-color: white;
 }
