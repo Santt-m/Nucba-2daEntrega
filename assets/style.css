@@ -73,23 +73,42 @@ header{
 
 /* Ajustes Main */
 main{
-    min-height: 70vh;
-    margin: 5px;
-    background-color: rgb(83, 83, 83);
-    border-radius: 10px;
-}
-.principal{
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    min-height: 70vh;
+    margin: 5px;
+
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
 }
-/* Ajustes BigCard */
+.principal{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    border: 1px solid black;
+}
+aside{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    border: 1px solid black;
+}
+
+
+/* Estilo BigCard */
 
 .bigCard{
-    min-width: 70%;
-    max-width: 900px;
+    width: 900px;
+    height: 450px;
     margin: 10px;
     border-radius: 10px;
 
@@ -99,15 +118,19 @@ main{
     flex-direction: row;
     justify-content: space-between;
 }
+
 /* Cuerpo de la bigCard */
+
 .bigCardContImg{
-    width: 30%;
+    /* border: 1px solid black; */
+
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .bigCardBody{
-    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .bigCardTitle{
     text-align: center;
@@ -149,10 +172,11 @@ main{
     
 }
 
-/* Ajustes de la imagen BigCard */
+/* Estilo de la imagen BigCard */
+
 .imgBigCard{
-    height: 100%;
-    width: 100%;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
     padding: 2px;
 }
@@ -160,26 +184,29 @@ main{
 /* Estilo MiniCard */
 
 .miniCard{
-    min-width: 25%;
-    max-width: 290px;
+    width: 290px;
+    height: 390px;
     margin: 10px;
+    padding: 5px;
+    
+    border: 2px solid grey;
     border-radius: 10px;
 
-    background-color: bisque;
+    background-color: rgb(0, 0, 0);
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* Estilo Cuerpo de la miniCard */
 .miniCardBody{
-    /* height: 30%; */
     margin: 5px;
     background-image: url(./img/Earth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border-radius: 10px;
-
 }
 .miniCardTitle{
     text-align: center;
@@ -190,15 +217,21 @@ main{
 .miniCardSubTitle{
     margin: 5px;
     color: white;
+    text-align: center;
 }
 .miniCardDescription{
     margin: 5px;
     color: white;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 20px;
+    line-height:20px;
 }
 .miniCardButton{
     display: flex;
     justify-content: center;
     font-style: bold;
+    margin: 5px;
 }
 .miniCardButton a{
     padding: 5px;
@@ -210,15 +243,15 @@ main{
 
 /* Estilo imagen miniCard */
 .miniCardContImg{
-    width: 100%;
-    height: 70%;
+    /* width: 100%;
+    height: 70%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .miniCardContImg img{
-    height: 100%;
-    width: 100%;
+    height: 150px;
+    width: 280px;
     border-radius: 10px;
     padding: 2px;
 }
