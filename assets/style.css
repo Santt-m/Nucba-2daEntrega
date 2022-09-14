@@ -5,35 +5,38 @@
     text-decoration: none;
     list-style-type: none;
 }
-/* div{
-    border: 1px solid black;
-} */
+div{
+    border: 1px solid white;
+}
 body{
     background-color: black;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    align-items: center;
 }
 /* Ajustes header */
 header{
+    width: 95%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 5px;
+    
     border: 1px solid black;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.27);
+
+    position: fixed;
+    top: 0;
 }
 /* Logo */
-.contLogo{
-    width: 10%;
-    margin: 5px;
-}
 .logo{
     width: 75px;
     height: 75px;
+    padding: 2px;
+    border: 5px;
     border: 1px solid red;
     border-radius: 360px;
 }
@@ -65,7 +68,8 @@ header{
     padding: 10px;
     border-radius: 10px 0px 10px 0px;
     border: 1px solid red;
-    color: white;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.536);
 }
 .navBar a:hover{
     background-color: rgba(255, 0, 0, 0.415);
@@ -80,7 +84,7 @@ main{
     
     min-height: 70vh;
     margin: 5px;
-
+    margin-top: 100px;
     background-color: rgb(83, 83, 83);
     border-radius: 10px;
 }
@@ -101,6 +105,13 @@ aside{
     justify-content: center;
 
     border: 1px solid black;
+}
+.calidad{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -155,7 +166,7 @@ aside{
 }
 .bigCardButton{
     margin: 5px;
-
+    
     text-align: center;
     font-style: bold;
 
@@ -185,7 +196,7 @@ aside{
 
 .miniCard{
     width: 290px;
-    height: 390px;
+    height: 440px;
     margin: 10px;
     padding: 5px;
     
@@ -197,15 +208,28 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* Estilo Cuerpo de la miniCard */
-.miniCardBody{
+.miniCardBody1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     margin: 5px;
     background-image: url(./img/Earth.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    border-radius: 10px;
+}
+.miniCardBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin: 5px;
     border-radius: 10px;
 }
 .miniCardTitle{
@@ -242,16 +266,38 @@ aside{
 }
 
 /* Estilo imagen miniCard */
+
 .miniCardContImg{
-    /* width: 100%;
-    height: 70%; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.miniCardContImg img{
-    height: 150px;
+.miniCardContImg img{    
     width: 280px;
+    height: 150px;
     border-radius: 10px;
     padding: 2px;
+}
+
+/* Estilo de las Card */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 290px;
+    height: 330px;
+}
+.cardTitle{
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 5px;
+    color: wheat;
+}
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
