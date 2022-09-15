@@ -95,18 +95,22 @@ h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: red;
 }
-aside{
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 
-    border: 1px solid black;
-}
 .calidad{
     width: 95%;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.criticas{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    width: 95%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -209,6 +213,109 @@ aside{
     margin-bottom: 10px;
 }
 
+/* Estilo criticas */
+
+.criticasCard{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.R{
+    flex-direction: row-reverse;;
+}
+.criticasCardImg{
+    width: 150px;
+    height: 200px;
+}
+.comillas{
+    font-size: 100px;
+    color: white;
+}
+.criticasP{
+    color: white;
+    font-size: 20px;    
+}
+.criticasCardTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/* Estilo Menu card  */
+
+.menuCard{
+    height: 170px;
+    width: 290px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.menuCardContTxt{
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menuCardContTxt h2{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+.menuCardContTxt p{
+    width: 100%;
+    margin: 5px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 5px;
+    line-height:15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+/* Estilos IMG menu Card */
+
+.menuCardImg-fix{
+    height: 110px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+/* Estilo footer */
+
+footer{
+    width: 100%;
+    border-top: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer p{
+    color: white;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
 /*  Estilos extras */
 
 .sombraBox{
@@ -220,3 +327,4 @@ aside{
 .subrayado{
     text-decoration: underline;
 }
+
