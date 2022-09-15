@@ -217,7 +217,7 @@ h1{
 
 .criticasCard{
     width: 100%;
-    margin: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -226,8 +226,8 @@ h1{
     flex-direction: row-reverse;;
 }
 .criticasCardImg{
-    width: 150px;
-    height: 200px;
+    width: 75px;
+    height: 100px;
 }
 .comillas{
     font-size: 100px;
