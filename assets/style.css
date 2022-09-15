@@ -5,9 +5,9 @@
     text-decoration: none;
     list-style-type: none;
 }
-div{
+/* div{
     border: 1px solid white;
-}
+} */
 body{
     background-color: black;
     display: flex;
@@ -85,7 +85,7 @@ main{
     min-height: 70vh;
     margin: 5px;
     margin-top: 100px;
-    background-color: rgb(83, 83, 83);
+    /* background-color: rgb(83, 83, 83); */
     border-radius: 10px;
 }
 h1{
@@ -105,8 +105,8 @@ aside{
     border: 1px solid black;
 }
 .calidad{
-    width: 100%;
-
+    width: 95%;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -132,7 +132,6 @@ aside{
     border-radius: 10px;
     padding: 2px;
 }
-
 .principal-div{
     display: flex;
     flex-direction: column;
@@ -161,112 +160,63 @@ aside{
     border-radius: 10px;
 }
 
-/* Estilo MiniCard */
-
-.miniCard{
-    width: 290px;
-    height: 440px;
-    margin: 10px;
-    padding: 5px;
-    
-    border: 2px solid grey;
-    border-radius: 10px;
-
-    background-color: rgb(0, 0, 0);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Estilo Cuerpo de la miniCard */
-.miniCardBody1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    margin: 5px;
-    background-image: url(./img/Earth.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    border-radius: 10px;
-}
-.miniCardBody{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    margin: 5px;
-    border-radius: 10px;
-}
-.miniCardTitle{
-    text-align: center;
-    letter-spacing: 2px;
-    margin: 5px;
-    color: wheat;
-}
-.miniCardSubTitle{
-    margin: 5px;
-    color: white;
-    text-align: center;
-}
-.miniCardDescription{
-    margin: 5px;
-    color: white;
-    font-style: italic;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-indent: 20px;
-    line-height:20px;
-}
-.miniCardButton{
-    display: flex;
-    justify-content: center;
-    font-style: bold;
-    margin: 5px;
-}
-.miniCardButton a{
-    padding: 5px;
-    color: red;
-    background-color: blue;
-    border: 1px solid red;
-    border-radius: 10px;
-}
-
-/* Estilo imagen miniCard */
-
-.miniCardContImg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.miniCardContImg img{    
-    width: 280px;
-    height: 150px;
-    border-radius: 10px;
-    padding: 2px;
-}
-
 /* Estilo de las Card */
 
 .card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 290px;
-    height: 330px;
-}
-.cardTitle{
-    text-align: center;
-    letter-spacing: 2px;
-    margin: 5px;
-    color: wheat;
-}
-.cardBody{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    width: 290px;
+    height: 430px;
+    margin: 20px;
+    background-color: black;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.imgCard-Elzar{
+    height: 150px;
+    width: 120px;
+    border-radius: 10px;
+}
+.imgCardMozos{
+    height: 200px;
+    width: 280px;
+    border-radius: 10px;
 
+}
+.card h2{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+.card h3{
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+.card p{
+    margin: 5px;
+    color: white;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 10px;
+    line-height:20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/*  Estilos extras */
+
+.sombraBox{
+    box-shadow: 10px 10px 23px -2px rgba(0,54,250,1);
+}
+.sobraTxt{
+    text-shadow: 5px 5px 7px rgba(0,19,255,0.66);
+}
+.subrayado{
+    text-decoration: underline;
 }
