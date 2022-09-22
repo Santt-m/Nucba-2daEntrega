@@ -6,7 +6,7 @@
     list-style-type: none;
 }
 /* div{
-    border: 1px solid white;
+    border: 1px solid red;
 } */
 body{
     background-color: black;
@@ -90,6 +90,7 @@ main{
 }
 h1{
     width: 100%;
+    margin-bottom: 30px;
     text-align: center;
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -121,39 +122,57 @@ h1{
 
 .principal{
     width: 80%;
+    height: 80vh;
     margin: 10px;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
 
     border: 1px solid black;
     border-radius: 10px;
-    background-color: rgb(0, 0, 0);
 }
 .principalImg{
-    height: 250px;
-    width: 250px;
-    border-radius: 10px;
+    height: 300px;
+    width: 300px;
     padding: 2px;
+
+    border-radius: 10px;    
 }
 .principal-div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.principal-div h2{
-    text-align: center;
-    letter-spacing: 2px;
-    color: wheat;
+.principal-txt{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
 }
-.principal-div p{
-    margin: 10px;
+.principal-txt h2{
+    color: blue;
+}
+.principal-txt p{
     color: white;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-indent: 20px;
+    text-indent: 10px;
     line-height:20px;
+    font-size: 15px;
+    margin: 10px;
+}
+.principal-descripcion{
+    color: white;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 15px;
+    line-height:30px;
+    font-size: 18px;
 }
 .principal-div a{
     margin: 10px;
