@@ -98,24 +98,12 @@ h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: red;
 }
-.criticas{
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-}
-.menu{
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 /* Estilo section principal */
 
 .principal{
     width: 80%;
-    height: 80vh;
+    min-height: 80vh;
     margin: 10px;
 
     display: flex;
@@ -126,6 +114,7 @@ h1{
     border-radius: 10px;
 }
 .principalImg{
+    margin: 20px;
     height: 350px;
     width: 500px;
     border: 5px solid grey;
@@ -197,8 +186,7 @@ h1{
     font-size: 15px;
     margin: 10px;
 }
-
-.calidad{
+.contenedor-card{
     width: 95%;
     margin-top: 20px;
     display: flex;
@@ -206,6 +194,7 @@ h1{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 /* Estilo de las Card */
 
 .card{
@@ -244,7 +233,7 @@ h1{
     font-size: 20px;
 }
 .card p{
-    margin: 5px;
+    padding: 5px;
     color: white;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -256,9 +245,14 @@ h1{
 
 /* Estilo criticas */
 
+.criticas{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
 .criticasCard{
     width: 100%;
-    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -284,7 +278,32 @@ h1{
     justify-content: center;
     text-align: center;
 }
+
 /* Estilo Menu card  */
+
+.menu{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu h2{
+        width: 100%;
+        font-size: 30px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: blue;
+}
+.menu p{
+    margin: 5px;
+    color: white;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 10px;
+    line-height:20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
 
 .menuCard{
     height: 170px;
@@ -366,7 +385,7 @@ footer img{
     justify-content: center;
 }
 .divisor img{
-    height: 60px;
+    height: 40px;
 }
 
 /*  Estilos extras */
@@ -381,3 +400,29 @@ footer img{
     text-decoration: underline;
 }
 
+/* MediaQueries */
+
+/* Laptops */
+
+@media (max-width: 1024px){
+
+    .principalImg{
+        height: 300px;
+        width: 400px;        
+    }
+    
+}
+
+/* Tablets 768 * 634 */
+@media (max-width: 770px){
+
+    .principal-div{
+        flex-direction: column;
+    }
+    .principal-txt{
+        width: 100%;
+    }
+    .contenedor-card{
+        justify-content: center;
+    }
+}
