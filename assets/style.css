@@ -16,7 +16,7 @@ img{
     border: 1px solid white;
 } */
 body{
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,6 +99,23 @@ h1{
     color: red;
 }
 
+/* Estilos generales */
+
+.texto{
+    color: black;
+}
+
+/* estilo contenedor de las cards generales */
+.contenedor-card{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
 /* Estilo section principal */
 
 .principal{
@@ -109,15 +126,12 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-    border: 1px solid black;
-    border-radius: 10px;
 }
 .principalImg{
     margin: 20px;
     height: 350px;
     width: 500px;
-    border: 5px solid grey;
+    border: 3px solid grey;
     border-radius: 10px;    
 }
 .principal-div{
@@ -139,7 +153,6 @@ h1{
     color: blue;
 }
 .principal-txt p{
-    color: white;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-indent: 10px;
@@ -178,21 +191,12 @@ h1{
 }
 .sectionCalidad p{
     width: 100%;
-    color: white;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-indent: 10px;
     line-height:20px;
     font-size: 15px;
     margin: 10px;
-}
-.contenedor-card{
-    width: 95%;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 /* Estilo de las Card */
@@ -205,8 +209,6 @@ h1{
     width: 290px;
     height: 430px;
     margin: 20px;
-    background-color: black;
-    border: 1px solid grey;
     border-radius: 10px;
 }
 .imgCard-Elzar{
@@ -234,49 +236,12 @@ h1{
 }
 .card p{
     padding: 5px;
-    color: white;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-indent: 10px;
     line-height:20px;
     font-size: 15px;
     margin-bottom: 10px;
-}
-
-/* Estilo criticas */
-
-.criticas{
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-}
-.criticasCard{
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.R{
-    flex-direction: row-reverse;;
-}
-.criticasCardImg{
-    width: 75px;
-    height: 100px;
-}
-.comillas{
-    font-size: 100px;
-    color: white;
-}
-.criticasP{
-    color: white;
-    font-size: 20px;    
-}
-.criticasCardTxt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 }
 
 /* Estilo Menu card  */
@@ -296,7 +261,6 @@ h1{
 }
 .menu p{
     margin: 5px;
-    color: white;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-indent: 10px;
@@ -304,7 +268,6 @@ h1{
     font-size: 15px;
     margin-bottom: 10px;
 }
-
 .menuCard{
     height: 170px;
     width: 290px;
@@ -335,7 +298,6 @@ h1{
 .menuCardContTxt p{
     width: 100%;
     margin: 5px;
-    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-indent: 5px;
     line-height:15px;
@@ -349,6 +311,67 @@ h1{
     height: 110px;
     width: 100px;
     border-radius: 10px;
+}
+
+/* Estilo contacto */
+.contacto{
+    width: 95%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacto h2{
+    width: 100%;
+    margin-bottom: 20px;
+    color: blue;
+}
+.cont-2{
+    width: 50%;
+}
+iframe{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    
+}
+.cont-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card-info{
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.contDatos{
+    display: flex;
+    align-items: center;
+}
+.info-redes{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.info-redes img{
+    background-color: grey;
+    border-radius: 360px;
+}
+.contactoImg{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 360px;
 }
 
 /* Estilo footer */
@@ -365,9 +388,6 @@ footer div{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-footer p{
-    color: white;
 }
 footer img{
     width: 50px;
@@ -390,7 +410,7 @@ footer img{
 
 /*  Estilos extras */
 
-.sombraBox{
+.sombraBox:hover{
     box-shadow: 10px 10px 23px -2px rgba(0,54,250,1);
 }
 .sobraTxt{
@@ -406,16 +426,36 @@ footer img{
 
 @media (max-width: 1024px){
 
+    body{
+        background-color: grey;
+    }
+    .texto{
+        color: white;
+    }
     .principalImg{
         height: 300px;
         width: 400px;        
     }
-    
+    .info-redes{
+        justify-content: center;
+
+    }
+    .info-redes img{
+        background-color: black;
+        border: 1px solid grey;
+        border-radius: 360px;
+    }
 }
 
 /* Tablets 768 * 634 */
 @media (max-width: 770px){
 
+    body{
+        background-color: black;
+    }
+    .texto{
+        color: white;
+    }
     .principal-div{
         flex-direction: column;
     }
@@ -425,4 +465,5 @@ footer img{
     .contenedor-card{
         justify-content: center;
     }
+
 }
