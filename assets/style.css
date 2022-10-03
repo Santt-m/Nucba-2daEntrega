@@ -22,7 +22,9 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
+
 /* Ajustes header */
+
 header{
     width: 100%;
     padding: 5px;
@@ -89,7 +91,9 @@ header{
     border: 2px solid grey;
     border-radius: 10px;
 }
-
+input{
+    display: none;
+}
 /* Ajustes Main */
 main{
     display: flex;
@@ -462,11 +466,14 @@ footer img{
     body{
         background-color: black;
     }
-
+    input{
+        display: none;
+    }
     /* NAV */
     .menu-label{
         display: flex;
         cursor: pointer;
+        justify-content: flex-end;
     }
 #label-menu:checked + .navbar-list{
     display: flex;
@@ -497,7 +504,9 @@ footer img{
     .navbar-list a:hover{
         color: red;
     }
-
+.ContCarrito{
+    display: none;
+}
 
     .texto{
         color: white;
